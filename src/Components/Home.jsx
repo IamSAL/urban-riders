@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import homeBG from "../images/Bg.png";
-import { mobileCheck as isMobile } from "../utils";
 import Transport from "./Transport";
 import Car from "../images/Car.png";
 import Bike from "../images/Bike.png";
 import Train from "../images/Train.png";
 import Bus from "../images/Bus.png";
-
+import { isMobile } from "./StyledComponents/StyledComp";
 const CityBG = styled.div`
   min-height: 100vh;
 

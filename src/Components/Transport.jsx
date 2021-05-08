@@ -1,9 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
+import { isMobile } from "./StyledComponents/StyledComp";
 import styled from "styled-components";
-import { mobileCheck as isMobile } from "../utils";
-
 const Vehicle = styled.div`
   cursor: pointer;
   padding: 40px 10px;
