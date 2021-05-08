@@ -1,4 +1,6 @@
 import React from "react";
+import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { mobileCheck as isMobile } from "../utils";
 
@@ -26,11 +28,14 @@ const Vehicle = styled.div`
 `;
 
 const Transport = ({ image, name }) => {
+  const history = useHistory();
   return (
-    <Vehicle>
-      <img src={image} alt="" />
-      <h5>{name}</h5>
-    </Vehicle>
+    <Link to={"/Navigate/" + name}>
+      <Vehicle>
+        <img src={image} alt="" />
+        <h5>{name}</h5>
+      </Vehicle>
+    </Link>
   );
 };
 

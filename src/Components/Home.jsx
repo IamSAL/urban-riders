@@ -10,7 +10,7 @@ import Bus from "../images/Bus.png";
 
 const CityBG = styled.div`
   min-height: 100vh;
-  background: url(${homeBG});
+
   background-size: ${isMobile() ? "cover" : "contain"};
   background-repeat: repeat-x;
   h1 {
@@ -20,7 +20,8 @@ const CityBG = styled.div`
 
 const Transports = styled.div`
   min-height: 100vh;
-  padding: ${isMobile() ? "200px 20px" : "30px"};
+  max-height: ${isMobile() ? "unset" : "100vh"};
+  padding: ${isMobile() ? "220px 20px" : "30px"};
   display: grid;
   grid-template-columns: ${isMobile() ? "1fr" : "1fr 1fr 1fr 1fr"};
   justify-content: center;
@@ -30,7 +31,7 @@ const Transports = styled.div`
 const Home = () => {
   console.log("isMobile", isMobile());
   return (
-    <CityBG>
+    <CityBG className="cityBG">
       <Transports>
         <Transport image={Bike} name="Bike"></Transport>
         <Transport image={Car} name="Car"></Transport>
