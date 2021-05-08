@@ -47,7 +47,7 @@ export const GPSProvider = ({ children }) => {
   const successHandler = (position) => {
     console.log(position.coords);
     let { latitude, longitude } = position.coords;
-    setGPSPostion([23.7488288, 90.4311135]);
+    // setGPSPostion([23.7488288, 90.4311135]);
     setGPSPostion([latitude, longitude]);
   };
   const failureHandler = (err) => {
