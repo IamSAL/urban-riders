@@ -1,6 +1,7 @@
 node_modules
 .DS_Store
-# dist
+dist
 dist-ssr
 *.local
-# AuthConfig.firebase.js
+AuthConfig.firebase.js
+*.config.js
